@@ -78,11 +78,11 @@ If you are using in a Windows environment, you may need to use the following com
 $env:PYTHONPATH += ":\path\to\models"
 ```
 
-If you are using a Colab notebook, please set the Python path with os.environ.
+If you are using a Colab notebook, please add the path to `sys.path`.
 
 ```python
-import os
-os.environ['PYTHONPATH'] += ":/path/to/models"
+import sys
+sys.path.append("/path/to/models")
 ```
 
 3. Install other dependencies
